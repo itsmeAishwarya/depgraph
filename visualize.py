@@ -1,7 +1,7 @@
 def render_tree(graph):
     """Print dependency tree in terminal."""
-    print("\n📦 DEPENDENCY GRAPH")
-    print("=" * 40)
+    print("\n DEPENDENCY GRAPH")
+    print("=" * 40)"""for clarity"""
     
     if not graph:
         print("No Python files found.")
@@ -23,7 +23,7 @@ def render_stats(graph):
     total_deps = sum(len(d) for d in graph.values())
     most_deps = max(graph.items(), key=lambda x: len(x[1]), default=("none", []))
     
-    print("\n📊 STATS")
+    print("\n STATS(imp ouput 1)")
     print("=" * 40)
     print(f"  Total modules:     {total_modules}")
     print(f"  Total dependencies:{total_deps}")
@@ -32,18 +32,18 @@ def render_stats(graph):
 
 def render_cycles(cycles):
     """Print circular dependency warnings."""
-    print("\n🔄 CIRCULAR DEPENDENCIES")
+    print("\n CIRCULAR DEPENDENCIES")
     print("=" * 40)
     if not cycles:
-        print("  ✅ None found!")
+        print(" :)  None found!")
     else:
         for cycle in cycles:
-            print(f"  ⚠️  {' → '.join(cycle)}")
+            print(f"    {' → '.join(cycle)}")
 
 
 def render_build_order(order):
     """Print topological build order."""
-    print("\n🏗️  BUILD ORDER (dependencies first)")
+    print("\n  BUILD ORDER (dependencies first)")
     print("=" * 40)
     for i, module in enumerate(order, 1):
         print(f"  {i}. {module}")
