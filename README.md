@@ -1,4 +1,4 @@
-# depgraph 🔍
+# depgraph 
 
 A Python dependency graph analyzer that maps, visualizes, and queries 
 module relationships in any Python codebase — built from scratch using 
@@ -37,7 +37,7 @@ python3 main.py order <directory>
 ## Sample output
 
 ```text
-📦 DEPENDENCY GRAPH
+ DEPENDENCY GRAPH
 
 ════════════════════════════════════════
 
@@ -50,7 +50,7 @@ parser (no local deps)
 graph (no local deps)
 visualize (no local deps)
 
-📊 STATS
+ STATS
 
 ════════════════════════════════════════
 
@@ -58,13 +58,13 @@ Total modules:      4
 Total dependencies: 3
 Most connected:     main (3 deps)
 
-🔄 CIRCULAR DEPENDENCIES
+CIRCULAR DEPENDENCIES
 
 ════════════════════════════════════════
 
-✅ None found!
+None found!
 
-🏗️ BUILD ORDER
+BUILD ORDER
 
 ════════════════════════════════════════
 
